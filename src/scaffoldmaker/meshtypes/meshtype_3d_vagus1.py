@@ -13,8 +13,8 @@ from scaffoldmaker.annotation.annotationgroup import AnnotationGroup, findOrCrea
     findAnnotationGroupByName
 from scaffoldmaker.annotation.vagus_terms import get_vagus_term
 from scaffoldmaker.meshtypes.scaffold_base import Scaffold_base
-from cmlibs.maths.vectorops import add, sub, mult, div, dot
-from scaffoldmaker.utils.vector import magnitude_squared, magnitude
+from cmlibs.maths.vectorops import add, sub, magnitude, mult, div, dot
+
 from scaffoldmaker.utils.interpolation import getCubicHermiteBasis, interpolateCubicHermite, interpolateLagrangeHermite, \
     interpolateHermiteLagrange, sampleCubicHermiteCurves
 from scaffoldmaker.utils.zinc_utils import get_nodeset_field_parameters, print_node_field_parameters
@@ -434,6 +434,15 @@ class MeshType_3d_vagus1(Scaffold_base):
         region.write(sir)
 
         return annotationGroups, None
+
+
+def magnitude_squared(v):
+    '''
+    return: squared scalar magnitude of vector v
+    '''
+
+    # TODO: proposed function to cmlibs.maths
+    return sum(c * c for c in v)
 
 
 def estimate_trunk_coordinates(elementsAlongTrunk, marker_data):
