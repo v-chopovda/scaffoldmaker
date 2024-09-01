@@ -12,7 +12,6 @@ from scaffoldmaker.meshtypes.meshtype_2d_plate1 import MeshType_2d_plate1
 from scaffoldmaker.meshtypes.meshtype_2d_platehole1 import MeshType_2d_platehole1
 from scaffoldmaker.meshtypes.meshtype_2d_sphere1 import MeshType_2d_sphere1
 from scaffoldmaker.meshtypes.meshtype_2d_tube1 import MeshType_2d_tube1
-from scaffoldmaker.meshtypes.meshtype_2d_tubebifurcation1 import MeshType_2d_tubebifurcation1
 from scaffoldmaker.meshtypes.meshtype_2d_tubenetwork1 import MeshType_2d_tubenetwork1
 from scaffoldmaker.meshtypes.meshtype_3d_bladder1 import MeshType_3d_bladder1
 from scaffoldmaker.meshtypes.meshtype_3d_bladderurethra1 import MeshType_3d_bladderurethra1
@@ -56,9 +55,11 @@ from scaffoldmaker.meshtypes.meshtype_3d_tube1 import MeshType_3d_tube1
 from scaffoldmaker.meshtypes.meshtype_3d_tubenetwork1 import MeshType_3d_tubenetwork1
 from scaffoldmaker.meshtypes.meshtype_3d_tubeseptum1 import MeshType_3d_tubeseptum1
 from scaffoldmaker.meshtypes.meshtype_3d_uterus1 import MeshType_3d_uterus1
+from scaffoldmaker.meshtypes.meshtype_3d_uterus2 import MeshType_3d_uterus2
 from scaffoldmaker.meshtypes.meshtype_3d_vagus1 import MeshType_3d_vagus1
 from scaffoldmaker.meshtypes.meshtype_3d_vagus_box1 import MeshType_3d_vagus_box1
 from scaffoldmaker.meshtypes.meshtype_3d_wholebody1 import MeshType_3d_wholebody1
+from scaffoldmaker.meshtypes.meshtype_3d_wholebody2 import MeshType_3d_wholebody2
 from scaffoldmaker.scaffoldpackage import ScaffoldPackage
 
 
@@ -74,8 +75,6 @@ class Scaffolds(object):
             MeshType_2d_platehole1,
             MeshType_2d_sphere1,
             MeshType_2d_tube1,
-            MeshType_2d_tubebifurcation1,
-            #MeshType_2d_tubebifurcationtree1,
             MeshType_2d_tubenetwork1,
             MeshType_3d_bladder1,
             MeshType_3d_bladderurethra1,
@@ -119,9 +118,11 @@ class Scaffolds(object):
             MeshType_3d_tubenetwork1,
             MeshType_3d_tubeseptum1,
             MeshType_3d_uterus1,
+            MeshType_3d_uterus2,
             MeshType_3d_vagus1,
             MeshType_3d_vagus_box1,
-            MeshType_3d_wholebody1
+            MeshType_3d_wholebody1,
+            MeshType_3d_wholebody2
             ]
 
     def findScaffoldTypeByName(self, name):
