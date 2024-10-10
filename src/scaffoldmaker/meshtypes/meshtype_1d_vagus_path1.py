@@ -16,7 +16,6 @@ from scaffoldmaker.utils.zinc_utils import clearRegion, get_nodeset_field_parame
     set_nodeset_field_parameters
 from scaffoldmaker.annotation.annotationgroup import AnnotationGroup, findOrCreateAnnotationGroupForTerm, \
     findAnnotationGroupByName, getAnnotationGroupForTerm
-from scaffoldmaker.annotation.vagus_terms import get_vagus_term
 from enum import Enum
 
 
