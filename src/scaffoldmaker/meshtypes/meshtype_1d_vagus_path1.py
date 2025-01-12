@@ -34,15 +34,15 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                                    "59.2-67, 21.2-68, 21.3-69, 22.2-70, 22.3-71, 23.2-72, 23.3-73, 19.2-74,"
                                    "20.2-75-76-77-78-79-80, 79.2-81, 80.2-82, 77.2-83, 78.2-84, 80.1-85-86, 85.2-87,"
                                    "86-88, 86.2-89, 80.3-90, 75.2-91, 20.3-92, 24.2-93, 25.2-94, 35.2-95, 36.2-96-97,"
-                                   "96.2-98, 4.3-99, 24.3-100, 49.3-101",
-        "Right vagus nerve (Jen)": "1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-101,"
-                                   "101-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43,"
+                                   "96.2-98, 24.3-99, 49.3-100",
+        "Right vagus nerve (Jen)": "1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-100,"
+                                   "100-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43,"
                                    "5.2-44, 6.2-45, 8.2-46-47-48, 46.2-49, 8.3-50-51, 50.2-52, 7.2-53-54, 53.2-55,"
                                    "7.3-56, 56-57-58, 56.2-59-60-61, 57.2-62, 58.2-63, 57.3-64-65, 64.2-66, 59.2-67,"
                                    "24.2-68, 24.3-69, 25.2-70, 25.3-71, 26.2-72, 26.3-73, 27.2-74, 22.2-75,"
                                    "23.2-76-77-78-79-80, 79.2-81, 80.2-82, 78.2-83, 79.3-84, 80.1-85-86, 85.2-87,"
                                    "86-88, 86.2-89, 80.3-90, 76.2-91, 28.2-92, 23.3-93, 27.3-94, 33.2-95, 38.2-96-97,"
-                                   "96.2-98, 46.3-99, 5.3-100, 101.2-102, 50.3-103",
+                                   "96.2-98, 46.3-99, 100.2-101, 50.3-102",
         # VN version with Japanese dataset
         "Left vagus nerve 1": "1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19.1-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34.1,"
                               "34.2-35-36, 19.2-37-38.1, 38.2-39-40, 38.3-41-42, 34.3-43.1-44, 43.2-45-46",
@@ -122,11 +122,11 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                  [0.7600, -0.9100, 0.2000], [-0.3500, 0.1100, 1.9700], [-0.4000, -0.8200, -0.7400]],
                 # node 4
                 [[27.2300, -73.0400, 1493.4700],
-                 [[3.6994,-1.1316,-5.2353],[-0.3511,4.4651,-0.8322], [1.2315,5.8715,-1.4765]],
-                 [[1.4987, 0.4126, 1.2596], [1.4154, -0.0233, 1.4138], [1.4154, -0.0233, 1.4138]],
-                 [[0.2100, -0.5900, 0.1500], [0.2100, -0.5900, 0.1500], [0.2100, -0.5900, 0.1500]],
-                 [[-0.1349, -1.8397, 0.7632], [1.3103, -0.7186, -1.3236], [1.3103, -0.7186, -1.3236]],
-                 [[0.1700, -1.0100, -0.7500], [0.1700, -1.0100, -0.7500], [0.1700, -1.0100, -0.7500]]],
+                 [[3.6994,-1.1316,-5.2353], [-0.3511,4.4651,-0.8322]],
+                 [[1.4987, 0.4126, 1.2596], [1.4154, -0.0233, 1.4138]],
+                 [[0.2100, -0.5900, 0.1500], [0.2100, -0.5900, 0.1500]],
+                 [[-0.1349, -1.8397, 0.7632], [1.3103, -0.7186, -1.3236]],
+                 [[0.1700, -1.0100, -0.7500], [0.1700, -1.0100, -0.7500]]],
                 # node 5
                 [[28.2300, -73.3400, 1489.4700],
                  [[2.0523,0.4427,-2.1600], [2.1347,1.1293,-1.9420], [-0.8352,3.2572,1.1936]],
@@ -268,7 +268,7 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 # Meningeal branch of left vagus nerve
                 [[14.6960, -32.9904, 1486.9920], [-24.3754, 38.9181, 22.9998], [1.6184, 0.3499, 1.1231],
                  [0.2100, -0.5900, 0.1500], [0.6927, 1.2549, -1.3893], [0.1700, -1.0100, -0.7500]],
-                # Communicating branch of left vagus nerve with left glossopharyngeal nerve
+                # left branch between vagus nerve and glossopharyngeal nerve
                 [[30.8700, -71.6880, 1488.1430], [2.2266, 2.2445, 0.2278], [1.5445, -1.2179, 0.3661],
                  [0.2100, -0.5900, 0.1500], [-0.7881, -1.3670, -1.2227], [0.1700, -1.0100, -0.7500]],
                 # Auricular branch of left vagus nerve
@@ -491,9 +491,6 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 # Pyloric branch of greater posterior gastric nerve
                 [[-9.5661, -151.3492, 1070.4161], [-7.9182, -4.6821, -1.0408], [1.9600, 0.2700, -0.3000],
                  [0.0300, -0.1000, 0.1100], [-0.0000, -1.4800, -1.3400], [0.0600, -0.2500, 0.3900]],
-                # Recurrent meningeal branch of left vagus nerve
-                [[22.9618, -37.8955, 1487.2993], [-3.9441, 11.5206, -1.2405], [1.9600, 0.2700, -0.3000],
-                 [0.0300, -0.1000, 0.1100], [-0.0000, -1.4800, -1.3400], [0.0600, -0.2500, 0.3900]],
                 # Left cardiac branch to deep cardiac nerve plexus
                 [[1.9304, -92.9963, 1287.2031], [0.1219, -2.0748, 2.7468], [1.9600, 0.2700, -0.3000],
                  [0.0300, -0.1000, 0.1100], [-0.0000, -1.4800, -1.3400], [0.0600, -0.2500, 0.3900]],
@@ -509,54 +506,49 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 ['left vagus X nerve trunk', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                                               21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
                                               36, 37, 38, 39, 40]],
-                ['Meningeal branch of left vagus nerve', [4, 41]],
-                ['Communicating branch of left vagus nerve with left glossopharyngeal nerve', [5, 42]],
-                ['Auricular branch of left vagus nerve', [5, 43, 44, 45, 46]],
+                ['Left meningeal branch of left vagus nerve', [4, 41]],
+                ['Left branch between vagus nerve and glossopharyngeal nerve', [5, 42]],
+                ['Left auricular branch of left vagus nerve', [5, 43, 44, 45, 46]],
                 ['Communicating branch of auricular branch of left vagus nerve with left facial nerve', [43, 47]],
                 ['Communicating branch of auricular branch of left vagus nerve with left posterior auricular nerve', [44, 48]],
-                ['Pharyngeal branch of left vagus nerve to pharyngeal nerve plexus', [6, 49, 50]],
+                ['Left pharyngeal branch of left vagus nerve to pharyngeal nerve plexus', [6, 49, 50]],
                 ['Lingual branch of left vagus nerve', [49, 51]],
-                # NA: Communicating branch with superior cervical ganglion (branch of pharyngeal branch)
                 ['Branch of left vagus nerve to carotid body', [6, 52, 53]],
-                ['Communicating branch with superior cervical ganglion', [52, 54]], # (branch of branch of VN to carotid body)
+                ['Left branch between vagus nerve and superior cervical ganglion', [52, 54]],
                 ['Left superior laryngeal nerve', [7, 55, 56]],
                 ['Left internal laryngeal nerve', [55, 57, 58]],
                 ['Left external laryngeal nerve', [56, 59, 60, 61]],
-                ['Superior ramus of left internal laryngeal nerve', [57, 62]],
-                ['Middle ramus of left internal laryngeal nerve', [58, 63]],
-                ['Inferior ramus of left internal laryngeal nerve', [58, 64, 65]],
+                ['Superior branch of left internal laryngeal nerve', [57, 62]],
+                ['Middle branch of left internal laryngeal nerve', [58, 63]],
+                ['Inferior branch of left internal laryngeal nerve', [58, 64, 65]],
                 ['Communicating branch of left internal laryngeal nerve with left recurrent laryngeal nerve', [64, 66]],
                 ['Communicating branch of left external laryngeal nerve with left superior cardiac nerve', [59, 67]],
-                ['Cardiopulmonary branch A of left vagus nerve', [21, 68]],
-                ['Cardiopulmonary branch B of left vagus nerve', [21, 69]],
-                ['Pulmonary branch A of left vagus nerve', [22, 70]],
-                ['Pulmonary branch B of left vagus nerve', [22, 71]],
-                ['Pulmonary branch C of left vagus nerve', [23, 72]],
-                ['Pulmonary branch D of left vagus nerve', [23, 73]],
+                ['Left A cervical cardiopulmonary branch of vagus nerve', [21, 68]],
+                ['Left B cervical cardiopulmonary branch of vagus nerve', [21, 69]],
+                ['Left pulmonary branch A of the vagus nerve', [22, 70]],
+                ['Left pulmonary branch B of the vagus nerve', [22, 71]],
+                ['Left pulmonary branch C of the vagus nerve', [23, 72]],
+                ['Left pulmonary branch D of the vagus nerve', [23, 73]],
                 ['Superior cervical cardiac branch of left vagus nerve', [19, 74]],
-                ['Left recurrent laryngeal nerve', [20, 75, 76, 77, 78, 79, 80]],
-                ['Extra-laryngeal branch of left recurrent laryngeal nerve to larynx', [79, 81]],
+                ['Left recurrent laryngeal nerve', [20, 75, 76, 77, 78, 79, 80, 85, 86]],
+                ['Extra laryngeal branch of left recurrent laryngeal nerve to larynx', [79, 81]],
                 ['Branch of left recurrent laryngeal nerve to muscle of larynx', [80, 82]],
-                ['Oesophageal branch of left recurrent laryngeal nerve', [77, 83]],
+                ['Esophageal branch of left recurrent laryngeal nerve', [77, 83]],
                 ['Tracheal branch of left recurrent laryngeal nerve', [78, 84]],
-                ['Left inferior laryngeal nerve', [80, 85, 86]],
-                ['External branch of left inferior laryngeal nerve', [85, 87]],
-                ['Anterior branch of left inferior laryngeal nerve', [86, 88]],
-                ['Posterior branch of left inferior laryngeal nerve', [86, 89]],
-                # communicating branch: RLN <-> internal laryngeal (exists already) - 66 should be possibly connected to inferior laryngeal nerve
-                ['Communicating branch of left recurrent laryngeal nerve with superior cervical ganglion', [80, 90]],
+                # ['left inferior laryngeal nerve', [80, 85, 86]], # merged with left recurrent laryngeal nerve
+                ['External branch of left inferior laryngeal nerve', [85, 87]], # to be removed
+                ['Anterior branch of left recurrent laryngeal nerve', [86, 88]],
+                ['Posterior branch of left recurrent laryngeal nerve', [86, 89]],
+                ['Communicating branch of left recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
                 ['Inferior cervical cardiac branch of left recurrent laryngeal nerve', [75, 91]],
                 ['Inferior cervical cardiac branch of left vagus nerve', [20, 92]],
                 ['Thoracic cardiac branch of left vagus nerve', [24, 93]],
-                # NA: Cardiac branch to deep cardiac
-                # === lit.review flatmaps (Shoffstall, Pelot) ends here ===
-                ['Branch of left vagus nerve to oesophageal nerve plexus', [25, 94]],
+                ['Left branch of left vagus nerve to esophageal nerve plexus', [25, 94]],
                 ['Celiac branch of posterior vagal trunk', [35, 95]],
                 ['Greater posterior gastric nerve', [36, 96, 97]],
                 ['Pyloric branch of greater posterior gastric nerve', [96, 98]],
-                ['Recurrent meningeal branch of left vagus nerve', [4, 99]],
-                ['Left cardiac branch to deep cardiac nerve plexus', [24, 100]],
-                ['Communicating branch of pharyngeal branch of left vagus nerve with superior cervical ganglion', [49, 101]]
+                ['Cardiac branch of left vagus to deep cardiac plexus', [24, 99]],
+                ['Left pharyngeal branch of left vagus nerve to superior cervical ganglion', [49, 100]]
             ]
 
         elif "Right vagus nerve (Jen)" in parameterSetName:
@@ -571,11 +563,11 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                  [4.0470, 4.3720, -3.8020], [-0.6791, 0.5858, 1.7830], [-1.7150, -1.8510, -6.9280]],
                 # node 5
                 [[-24.3650, -68.6320, 1496.9440],
-                 [[-2.5778, -1.7319, 0.0320], [2.7618,-2.7995,-5.2685], [-0.4314, 14.2171, -4.6640]],
-                 [[0.9082, -1.3299, 1.1870], [0.9082, -1.3299, 1.1870], [0.9082, -1.3299, 1.1870]],
-                 [[1.1310, 0.2600, -0.3860], [1.1310, 0.2600, -0.3860], [1.1310, 0.2600, -0.3860]],
-                 [[-0.6468, 0.9924, 1.6068], [-0.6468, 0.9924, 1.6068], [-0.6468, 0.9924, 1.6068]],
-                 [[-0.4950, -1.0210, 0.4080], [-0.4950, -1.0210, 0.4080], [-0.4950, -1.0210, 0.4080]]],
+                 [[-2.5778, -1.7319, 0.0320], [2.7618,-2.7995,-5.2685]],
+                 [[0.9082, -1.3299, 1.1870], [0.9082, -1.3299, 1.1870]],
+                 [[1.1310, 0.2600, -0.3860], [1.1310, 0.2600, -0.3860]],
+                 [[-0.6468, 0.9924, 1.6068], [-0.6468, 0.9924, 1.6068]],
+                 [[-0.4950, -1.0210, 0.4080], [-0.4950, -1.0210, 0.4080]]],
                 # node 6
                 [[-26.5680, -70.9200, 1495.8550],
                  [[-2.1050, -1.8180, -2.1090], [-1.8273, 0.1175, -3.6751]],
@@ -927,9 +919,6 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 # Communicating branch of auricular branch of right vagus nerve with right facial nerve
                 [[-52.0877, -81.5070, 1501.7519], [-10.9367, -5.8213, 3.1473], [0.9082, -1.3299, 1.1870],
                  [1.1310, 0.2600, -0.3860], [-0.6468, 0.9924, 1.6068], [-0.4950, -1.0210, 0.4080]],
-                # Recurrent meningeal branch of right vagus nerve
-                [[-27.0307, -37.7389, 1487.2719], [1.1450, 8.9687, -0.8818], [0.9082, -1.3299, 1.1870],
-                 [1.1310, 0.2600, -0.3860], [-0.6468, 0.9924, 1.6068], [-0.4950, -1.0210, 0.4080]],
                 # Right vagus trunk point - node 101
                 [[-17.4290, -87.9040, 1332.8140],
                  [[2.5565, 2.9584, -7.2148], [2.8953, -1.2797, -10.8119]],
@@ -946,58 +935,57 @@ class MeshType_1d_vagus_path1(Scaffold_base):
             ]
 
             bifurcating_nodes = [5, 6, 7, 8, 22, 23, 24, 25, 26, 27, 28, 33, 38,
-                                 46, 50, 53, 56, 57, 58, 59, 64, 76, 78, 79, 80, 85, 86, 96, 101]
+                                 46, 50, 53, 56, 57, 58, 59, 64, 76, 78, 79, 80, 85, 86, 96, 100]
 
             nodesByGroup = [
                 ['right vagus X nerve trunk', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                                                21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-                                               39, 40, 41, 42, 43, 101]],
-                ['Meningeal branch of right vagus nerve', [5, 44]],
-                ['Communicating branch of right vagus nerve with right glossopharyngeal nerve', [6, 45]],
-                ['Auricular branch of right vagus nerve', [8, 46, 47, 48]],
+                                               39, 40, 41, 42, 43, 100]],
+                ['Right meningeal branch of right vagus nerve', [5, 44]],
+                ['Right branch between vagus nerve and glossopharyngeal nerve', [6, 45]],
+                ['Right auricular branch of right vagus nerve', [8, 46, 47, 48]],
                 ['Communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
                 ['Communicating branch of auricular branch of right vagus nerve with right posterior auricular nerve', [46, 49]],
-                ['Pharyngeal branch of right vagus nerve to pharyngeal nerve plexus', [8, 50, 51]],
+                ['Right pharyngeal branch of right vagus nerve to pharyngeal nerve plexus', [8, 50, 51]],
                 ['Lingual branch of right vagus nerve', [50, 52]],
                 ['Branch of right vagus nerve to carotid body', [7, 53, 54]],
-                ['Communicating branch of superior cervical ganglion with right vagus nerve', [53, 55]],
+                ['Right branch between vagus nerve and superior cervical ganglion', [53, 55]],
                 ['Right superior laryngeal nerve', [7, 56]],
                 ['Right internal laryngeal nerve', [56, 57, 58]],
                 ['Right external laryngeal nerve', [56, 59, 60, 61]],
-                ['Superior ramus of right internal laryngeal nerve', [57, 62]],
-                ['Middle ramus of right internal laryngeal nerve', [58, 63]],
-                ['Inferior ramus of right internal laryngeal nerve', [57, 64, 65]],
+                ['Superior branch of right internal laryngeal nerve', [57, 62]],
+                ['Middle branch of right internal laryngeal nerve', [58, 63]],
+                ['Inferior branch of right internal laryngeal nerve', [57, 64, 65]],
                 ['Communicating branch of right internal laryngeal nerve with right recurrent laryngeal nerve', [64, 66]],
                 ['Communicating branch of right external laryngeal nerve with right superior cardiac nerve', [59, 67]],
-                ['Cardiopulmonary branch A of right vagus nerve', [24, 68]],
-                ['Cardiopulmonary branch B of right vagus nerve', [24, 69]],
-                ['Pulmonary branch A of right vagus nerve', [25, 70]],
-                ['Pulmonary branch B of right vagus nerve', [25, 71]],
-                ['Pulmonary branch C of right vagus nerve', [26, 72]],
-                ['Pulmonary branch D of right vagus nerve', [26, 73]],
-                ['Pulmonary branch E of right vagus nerve', [27, 74]],
+                ['Right A cervical cardiopulmonary branch of vagus nerve', [24, 68]],
+                ['Right B cervical cardiopulmonary branch of vagus nerve', [24, 69]],
+                ['Right pulmonary branch A of the vagus nerve', [25, 70]],
+                ['Right pulmonary branch B of the vagus nerve', [25, 71]],
+                ['Right pulmonary branch C of the vagus nerve', [26, 72]],
+                ['Right pulmonary branch D of the vagus nerve', [26, 73]],
+                ['Right pulmonary branch E of the vagus nerve', [27, 74]],
                 ['Superior cervical cardiac branch of right vagus nerve', [22, 75]],
-                ['Right recurrent laryngeal nerve', [23, 76, 77, 78, 79, 80]],
-                ['Extra-laryngeal branch of right recurrent laryngeal nerve to larynx', [79, 81]],
+                ['Right recurrent laryngeal nerve', [23, 76, 77, 78, 79, 80, 85, 86]],
+                ['Extra laryngeal branch of right recurrent laryngeal nerve to larynx', [79, 81]],
                 ['Branch of right recurrent laryngeal nerve to muscle of larynx', [80, 82]],
-                ['Oesophageal branch of right recurrent laryngeal nerve', [78, 83]],
+                ['Esophageal branch of right recurrent laryngeal nerve', [78, 83]],
                 ['Tracheal branch of right recurrent laryngeal nerve', [79, 84]],
-                ['Right inferior laryngeal nerve', [80, 85, 86]],
-                ['External branch of right inferior laryngeal nerve', [85, 87]],
-                ['Anterior branch of right inferior laryngeal nerve', [86, 88]],
-                ['Posterior branch of right inferior laryngeal nerve', [86, 89]],
-                ['Communicating branch of right recurrent laryngeal nerve with superior cervical ganglion', [80, 90]],
+                # ['Right inferior laryngeal nerve', [80, 85, 86]], # merged with right recurrent laryngeal nerve
+                ['External branch of right inferior laryngeal nerve', [85, 87]], # to be removed
+                ['Anterior branch of right recurrent laryngeal nerve', [86, 88]],
+                ['Posterior branch of right recurrent laryngeal nerve', [86, 89]],
+                ['Communicating branch of right recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
                 ['Inferior cervical cardiac branch of right recurrent laryngeal nerve', [76, 91]],
                 ['Inferior cervical cardiac branch of right vagus nerve', [28, 92]],
                 ['Thoracic cardiac branch of right vagus nerve', [23, 93]],
-                ['Branch of right vagus nerve to oesophageal nerve plexus', [27, 94]],
+                ['Right branch of right vagus nerve to esophageal nerve plexus', [27, 94]],
                 ['Hepatic branch of anterior vagal trunk', [33, 95]],
                 ['Greater anterior gastric nerve', [38, 96, 97]],
                 ['Branch of greater anterior gastric nerve to coeliac nerve plexus', [96, 98]],
                 ['Communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
-                ['Recurrent meningeal branch of right vagus nerve', [5, 100]],
-                ['Right cardiac branch to deep cardiac nerve plexus', [101, 102]],
-                ['Communicating branch of pharyngeal branch of right vagus nerve with superior cervical ganglion', [50, 103]],
+                ['Cardiac branch of right vagus to deep cardiac plexus', [100, 101]],
+                ['Right pharyngeal branch of right vagus nerve to superior cervical ganglion', [50, 102]],
             ]
 
         elif "Right vagus nerve 1" in parameterSetName:
@@ -1696,22 +1684,26 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 ["left level of angle of the mandible on the vagus nerve", [36.11596477766252, -82.68291542919793, 1449.201631366949]],
                 ["left level of C1 transverse process on the vagus nerve", [35.61590793674574, -78.40798854214731, 1465.004007224821]],
                 ["left level of inferior border of jugular foramen on the vagus nerve", [29.00379183524906, -73.43913993329343, 1489.753246601004]],
-                ["left level of superior border of jugular foramen on the vagus nerve", [22.73942104901961, -68.45420763548567, 1496.786534505575]]
+                ["left level of superior border of jugular foramen on the vagus nerve", [22.73942104901961, -68.45420763548567, 1496.786534505575]],
+                ["left level of 1 cm superior to start of esophageal plexus on the vagus nerve", [15.94181935291926, -88.06086706331142, 1269.803271889218]],
+                ["left level of inferior border of cranium on the vagus nerve", [30.95657909378077, -7.365470193915333, 1485.510023376459]]
             ]
         elif 'Right vagus nerve' in parameterSetName:
             markers = [
-                ["right level of aortic hiatus on the vagus nerve", [2.857187369130158e+01, -1.680750064195565e+02, 1.119661917545011e+03]],
-                ["right level of esophageal hiatus on the vagus nerve", [-9.195302693446701e-01, -1.016361742421971e+02, 1.159723281904762e+03]],
-                ["right level of sternal angle on the vagus nerve", [-1.058497116367158e+01, -7.125811558315239e+01, 1.282280061965457e+03]],
-                ["right level of jugular notch on the vagus nerve", [-1.502748368488142e+01, -8.280071937399315e+01, 1.320639742807302e+03]],
-                ["right level of superior border of the clavicle on the vagus nerve", [-2.001148178704096e+01, -9.104980648857322e+01, 1.334731212428474e+03]],
-                ["right level of laryngeal prominence on the vagus nerve", [-2.849686285614611e+01, -8.749901649558907e+01, 1.406966474946987e+03]],
-                ["right level of carotid bifurcation on the vagus nerve", [-3.595517091822101e+01, -8.519973466428642e+01, 1.437131806108974e+03]],
-                ["right level of greater horn of hyoid on the vagus nerve", [-3.674862843782626e+01, -8.459908691176865e+01, 1.440846183137809e+03]],
-                ["right level of angle of the mandible on the vagus nerve", [-3.744951219372309e+01, -8.229365059535783e+01, 1.450518951633510e+03]],
-                ["right level of C1 transverse process on the vagus nerve", [-3.629626827494332e+01, -7.792534894897162e+01, 1.468880881043994e+03]],
-                ["right level of inferior border of jugular foramen on the vagus nerve", [-3.205319523842088e+01, -7.382072085130416e+01, 1.485522883019911e+03]],
-                ["right level of superior border of jugular foramen on the vagus nerve", [-2.904332161133046e+01, -7.276752724026950e+01, 1.492562938430684e+03]]
+                ["right level of aortic hiatus on the vagus nerve", [28.57187369130158, -168.0750064195565, 1119.661917545011]],
+                ["right level of esophageal hiatus on the vagus nerve", [-0.9195302693446701, -101.6361742421971, 1159.723281904762]],
+                ["right level of sternal angle on the vagus nerve", [-10.58497116367158, -71.25811558315239, 1282.280061965457]],
+                ["right level of jugular notch on the vagus nerve", [-15.02748368488142, -82.80071937399315, 1320.639742807302]],
+                ["right level of superior border of the clavicle on the vagus nerve", [-20.01148178704096, -91.04980648857322, 1334.731212428474]],
+                ["right level of laryngeal prominence on the vagus nerve", [-28.49686285614611, -87.49901649558907, 1406.966474946987]],
+                ["right level of carotid bifurcation on the vagus nerve", [-35.95517091822101, -85.19973466428642, 1437.131806108974]],
+                ["right level of greater horn of hyoid on the vagus nerve", [-36.74862843782626, -84.59908691176865, 1440.846183137809]],
+                ["right level of angle of the mandible on the vagus nerve", [-37.44951219372309, -82.29365059535783, 1450.518951633510]],
+                ["right level of C1 transverse process on the vagus nerve", [-36.29626827494332, -77.92534894897162, 1468.880881043994]],
+                ["right level of inferior border of jugular foramen on the vagus nerve", [-32.05319523842088, -73.82072085130416, 1485.522883019911]],
+                ["right level of superior border of jugular foramen on the vagus nerve", [-29.04332161133046, -72.76752724026950, 1492.562938430684]],
+                ["right level of 1 cm superior to start of esophageal plexus on the vagus nerve", [-6.378107407321456, -65.14215041778135, 1261.742383292103]],
+                ["right level of inferior border of cranium on the vagus nerve", [-32.35252313338188, -74.29105387134346, 1484.318158553875]]
             ]
         else:
             markers = []
