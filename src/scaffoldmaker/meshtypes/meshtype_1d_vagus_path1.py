@@ -18,6 +18,8 @@ from scaffoldmaker.annotation.annotationgroup import AnnotationGroup, findOrCrea
     findAnnotationGroupByName, getAnnotationGroupForTerm
 from enum import Enum
 
+from scaffoldmaker.annotation.vagus_terms import get_vagus_branch_term
+
 
 class MeshType_1d_vagus_path1(Scaffold_base):
     """
@@ -506,49 +508,49 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 ['left vagus X nerve trunk', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                                               21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
                                               36, 37, 38, 39, 40]],
-                ['Left meningeal branch of left vagus nerve', [4, 41]],
-                ['Left branch between vagus nerve and glossopharyngeal nerve', [5, 42]],
-                ['Left auricular branch of left vagus nerve', [5, 43, 44, 45, 46]],
-                ['Communicating branch of auricular branch of left vagus nerve with left facial nerve', [43, 47]],
-                ['Communicating branch of auricular branch of left vagus nerve with left posterior auricular nerve', [44, 48]],
-                ['Left pharyngeal branch of left vagus nerve to pharyngeal nerve plexus', [6, 49, 50]],
-                ['Lingual branch of left vagus nerve', [49, 51]],
-                ['Branch of left vagus nerve to carotid body', [6, 52, 53]],
-                ['Left branch between vagus nerve and superior cervical ganglion', [52, 54]],
-                ['Left superior laryngeal nerve', [7, 55, 56]],
-                ['Left internal laryngeal nerve', [55, 57, 58]],
-                ['Left external laryngeal nerve', [56, 59, 60, 61]],
-                ['Superior branch of left internal laryngeal nerve', [57, 62]],
-                ['Middle branch of left internal laryngeal nerve', [58, 63]],
-                ['Inferior branch of left internal laryngeal nerve', [58, 64, 65]],
-                ['Communicating branch of left internal laryngeal nerve with left recurrent laryngeal nerve', [64, 66]],
-                ['Communicating branch of left external laryngeal nerve with left superior cardiac nerve', [59, 67]],
-                ['Left A cervical cardiopulmonary branch of vagus nerve', [21, 68]],
-                ['Left B cervical cardiopulmonary branch of vagus nerve', [21, 69]],
-                ['Left pulmonary branch A of the vagus nerve', [22, 70]],
-                ['Left pulmonary branch B of the vagus nerve', [22, 71]],
-                ['Left pulmonary branch C of the vagus nerve', [23, 72]],
-                ['Left pulmonary branch D of the vagus nerve', [23, 73]],
-                ['Superior cervical cardiac branch of left vagus nerve', [19, 74]],
-                ['Left recurrent laryngeal nerve', [20, 75, 76, 77, 78, 79, 80, 85, 86]],
-                ['Extra laryngeal branch of left recurrent laryngeal nerve to larynx', [79, 81]],
-                ['Branch of left recurrent laryngeal nerve to muscle of larynx', [80, 82]],
-                ['Esophageal branch of left recurrent laryngeal nerve', [77, 83]],
-                ['Tracheal branch of left recurrent laryngeal nerve', [78, 84]],
+                ['left meningeal branch of left vagus nerve', [4, 41]],
+                ['left branch between vagus nerve and glossopharyngeal nerve', [5, 42]],
+                ['left auricular branch of left vagus nerve', [5, 43, 44, 45, 46]],
+                ['communicating branch of auricular branch of left vagus nerve with left facial nerve', [43, 47]],
+                ['communicating branch of auricular branch of left vagus nerve with left posterior auricular nerve', [44, 48]],
+                ['left pharyngeal branch of left vagus nerve to pharyngeal nerve plexus', [6, 49, 50]],
+                ['lingual branch of left vagus nerve', [49, 51]],
+                ['branch of left vagus nerve to carotid body', [6, 52, 53]],
+                ['left branch between vagus nerve and superior cervical ganglion', [52, 54]],
+                ['left superior laryngeal nerve', [7, 55, 56]],
+                ['left internal laryngeal nerve', [55, 57, 58]],
+                ['left external laryngeal nerve', [56, 59, 60, 61]],
+                ['superior branch of left internal laryngeal nerve', [57, 62]],
+                ['middle branch of left internal laryngeal nerve', [58, 63]],
+                ['inferior branch of left internal laryngeal nerve', [58, 64, 65]],
+                ['communicating branch of left internal laryngeal nerve with left recurrent laryngeal nerve', [64, 66]],
+                ['communicating branch of left external laryngeal nerve with left superior cardiac nerve', [59, 67]],
+                ['left A cervical cardiopulmonary branch of vagus nerve', [21, 68]],
+                ['left B cervical cardiopulmonary branch of vagus nerve', [21, 69]],
+                ['left pulmonary branch A of the vagus nerve', [22, 70]],
+                ['left pulmonary branch B of the vagus nerve', [22, 71]],
+                ['left pulmonary branch C of the vagus nerve', [23, 72]],
+                ['left pulmonary branch D of the vagus nerve', [23, 73]],
+                ['superior cervical cardiac branch of left vagus nerve', [19, 74]],
+                ['left recurrent laryngeal nerve', [20, 75, 76, 77, 78, 79, 80, 85, 86]],
+                ['extra laryngeal branch of left recurrent laryngeal nerve to larynx', [79, 81]],
+                ['branch of left recurrent laryngeal nerve to muscle of larynx', [80, 82]],
+                ['esophageal branch of left recurrent laryngeal nerve', [77, 83]],
+                ['tracheal branch of left recurrent laryngeal nerve', [78, 84]],
                 # ['left inferior laryngeal nerve', [80, 85, 86]], # merged with left recurrent laryngeal nerve
-                ['External branch of left inferior laryngeal nerve', [85, 87]], # to be removed
-                ['Anterior branch of left recurrent laryngeal nerve', [86, 88]],
-                ['Posterior branch of left recurrent laryngeal nerve', [86, 89]],
-                ['Communicating branch of left recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
-                ['Inferior cervical cardiac branch of left recurrent laryngeal nerve', [75, 91]],
-                ['Inferior cervical cardiac branch of left vagus nerve', [20, 92]],
-                ['Thoracic cardiac branch of left vagus nerve', [24, 93]],
-                ['Left branch of left vagus nerve to esophageal nerve plexus', [25, 94]],
-                ['Celiac branch of posterior vagal trunk', [35, 95]],
-                ['Greater posterior gastric nerve', [36, 96, 97]],
-                ['Pyloric branch of greater posterior gastric nerve', [96, 98]],
-                ['Cardiac branch of left vagus to deep cardiac plexus', [24, 99]],
-                ['Left pharyngeal branch of left vagus nerve to superior cervical ganglion', [49, 100]]
+                ['external branch of left inferior laryngeal nerve', [85, 87]], # to be removed
+                ['anterior branch of left recurrent laryngeal nerve', [86, 88]],
+                ['posterior branch of left recurrent laryngeal nerve', [86, 89]],
+                ['communicating branch of left recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
+                ['inferior cervical cardiac branch of left recurrent laryngeal nerve', [75, 91]],
+                ['inferior cervical cardiac branch of left vagus nerve', [20, 92]],
+                ['thoracic cardiac branch of left vagus nerve', [24, 93]],
+                ['left branch of left vagus nerve to esophageal nerve plexus', [25, 94]],
+                ['celiac branch of posterior vagal trunk', [35, 95]],
+                ['greater posterior gastric nerve', [36, 96, 97]],
+                ['pyloric branch of greater posterior gastric nerve', [96, 98]],
+                ['cardiac branch of left vagus to deep cardiac plexus', [24, 99]],
+                ['left pharyngeal branch of left vagus nerve to superior cervical ganglion', [49, 100]]
             ]
 
         elif "Right vagus nerve (Jen)" in parameterSetName:
@@ -941,51 +943,51 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                 ['right vagus X nerve trunk', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                                                21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
                                                39, 40, 41, 42, 43, 100]],
-                ['Right meningeal branch of right vagus nerve', [5, 44]],
-                ['Right branch between vagus nerve and glossopharyngeal nerve', [6, 45]],
-                ['Right auricular branch of right vagus nerve', [8, 46, 47, 48]],
-                ['Communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
-                ['Communicating branch of auricular branch of right vagus nerve with right posterior auricular nerve', [46, 49]],
-                ['Right pharyngeal branch of right vagus nerve to pharyngeal nerve plexus', [8, 50, 51]],
-                ['Lingual branch of right vagus nerve', [50, 52]],
-                ['Branch of right vagus nerve to carotid body', [7, 53, 54]],
-                ['Right branch between vagus nerve and superior cervical ganglion', [53, 55]],
-                ['Right superior laryngeal nerve', [7, 56]],
-                ['Right internal laryngeal nerve', [56, 57, 58]],
-                ['Right external laryngeal nerve', [56, 59, 60, 61]],
-                ['Superior branch of right internal laryngeal nerve', [57, 62]],
-                ['Middle branch of right internal laryngeal nerve', [58, 63]],
-                ['Inferior branch of right internal laryngeal nerve', [57, 64, 65]],
-                ['Communicating branch of right internal laryngeal nerve with right recurrent laryngeal nerve', [64, 66]],
-                ['Communicating branch of right external laryngeal nerve with right superior cardiac nerve', [59, 67]],
-                ['Right A cervical cardiopulmonary branch of vagus nerve', [24, 68]],
-                ['Right B cervical cardiopulmonary branch of vagus nerve', [24, 69]],
-                ['Right pulmonary branch A of the vagus nerve', [25, 70]],
-                ['Right pulmonary branch B of the vagus nerve', [25, 71]],
-                ['Right pulmonary branch C of the vagus nerve', [26, 72]],
-                ['Right pulmonary branch D of the vagus nerve', [26, 73]],
-                ['Right pulmonary branch E of the vagus nerve', [27, 74]],
-                ['Superior cervical cardiac branch of right vagus nerve', [22, 75]],
-                ['Right recurrent laryngeal nerve', [23, 76, 77, 78, 79, 80, 85, 86]],
-                ['Extra laryngeal branch of right recurrent laryngeal nerve to larynx', [79, 81]],
-                ['Branch of right recurrent laryngeal nerve to muscle of larynx', [80, 82]],
-                ['Esophageal branch of right recurrent laryngeal nerve', [78, 83]],
-                ['Tracheal branch of right recurrent laryngeal nerve', [79, 84]],
+                ['right meningeal branch of right vagus nerve', [5, 44]],
+                ['right branch between vagus nerve and glossopharyngeal nerve', [6, 45]],
+                ['right auricular branch of right vagus nerve', [8, 46, 47, 48]],
+                ['communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
+                ['communicating branch of auricular branch of right vagus nerve with right posterior auricular nerve', [46, 49]],
+                ['right pharyngeal branch of right vagus nerve to pharyngeal nerve plexus', [8, 50, 51]],
+                ['lingual branch of right vagus nerve', [50, 52]],
+                ['branch of right vagus nerve to carotid body', [7, 53, 54]],
+                ['right branch between vagus nerve and superior cervical ganglion', [53, 55]],
+                ['right superior laryngeal nerve', [7, 56]],
+                ['right internal laryngeal nerve', [56, 57, 58]],
+                ['right external laryngeal nerve', [56, 59, 60, 61]],
+                ['superior branch of right internal laryngeal nerve', [57, 62]],
+                ['middle branch of right internal laryngeal nerve', [58, 63]],
+                ['inferior branch of right internal laryngeal nerve', [57, 64, 65]],
+                ['communicating branch of right internal laryngeal nerve with right recurrent laryngeal nerve', [64, 66]],
+                ['communicating branch of right external laryngeal nerve with right superior cardiac nerve', [59, 67]],
+                ['right A cervical cardiopulmonary branch of vagus nerve', [24, 68]],
+                ['right B cervical cardiopulmonary branch of vagus nerve', [24, 69]],
+                ['right pulmonary branch A of the vagus nerve', [25, 70]],
+                ['right pulmonary branch B of the vagus nerve', [25, 71]],
+                ['right pulmonary branch C of the vagus nerve', [26, 72]],
+                ['right pulmonary branch D of the vagus nerve', [26, 73]],
+                ['right pulmonary branch E of the vagus nerve', [27, 74]],
+                ['superior cervical cardiac branch of right vagus nerve', [22, 75]],
+                ['right recurrent laryngeal nerve', [23, 76, 77, 78, 79, 80, 85, 86]],
+                ['extra laryngeal branch of right recurrent laryngeal nerve to larynx', [79, 81]],
+                ['branch of right recurrent laryngeal nerve to muscle of larynx', [80, 82]],
+                ['esophageal branch of right recurrent laryngeal nerve', [78, 83]],
+                ['tracheal branch of right recurrent laryngeal nerve', [79, 84]],
                 # ['Right inferior laryngeal nerve', [80, 85, 86]], # merged with right recurrent laryngeal nerve
-                ['External branch of right inferior laryngeal nerve', [85, 87]], # to be removed
-                ['Anterior branch of right recurrent laryngeal nerve', [86, 88]],
-                ['Posterior branch of right recurrent laryngeal nerve', [86, 89]],
-                ['Communicating branch of right recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
-                ['Inferior cervical cardiac branch of right recurrent laryngeal nerve', [76, 91]],
-                ['Inferior cervical cardiac branch of right vagus nerve', [28, 92]],
-                ['Thoracic cardiac branch of right vagus nerve', [23, 93]],
-                ['Right branch of right vagus nerve to esophageal nerve plexus', [27, 94]],
-                ['Hepatic branch of anterior vagal trunk', [33, 95]],
-                ['Greater anterior gastric nerve', [38, 96, 97]],
-                ['Branch of greater anterior gastric nerve to coeliac nerve plexus', [96, 98]],
-                ['Communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
-                ['Cardiac branch of right vagus to deep cardiac plexus', [100, 101]],
-                ['Right pharyngeal branch of right vagus nerve to superior cervical ganglion', [50, 102]],
+                ['external branch of right inferior laryngeal nerve', [85, 87]], # to be removed
+                ['anterior branch of right recurrent laryngeal nerve', [86, 88]],
+                ['posterior branch of right recurrent laryngeal nerve', [86, 89]],
+                ['communicating branch of right recurrent laryngeal nerve with superior cervical ganglion', [80, 90]], # to be removed
+                ['inferior cervical cardiac branch of right recurrent laryngeal nerve', [76, 91]],
+                ['inferior cervical cardiac branch of right vagus nerve', [28, 92]],
+                ['thoracic cardiac branch of right vagus nerve', [23, 93]],
+                ['right branch of right vagus nerve to esophageal nerve plexus', [27, 94]],
+                ['hepatic branch of anterior vagal trunk', [33, 95]],
+                ['greater anterior gastric nerve', [38, 96, 97]],
+                ['branch of greater anterior gastric nerve to coeliac nerve plexus', [96, 98]],
+                ['communicating branch of auricular branch of right vagus nerve with right facial nerve', [46, 99]],
+                ['cardiac branch of right vagus to deep cardiac plexus', [100, 101]],
+                ['right pharyngeal branch of right vagus nerve to superior cervical ganglion', [50, 102]],
             ]
 
         elif "Right vagus nerve 1" in parameterSetName:
@@ -1640,7 +1642,7 @@ class MeshType_1d_vagus_path1(Scaffold_base):
                                                39, 40, 41]],
             ]
 
-
+        # write nodes
         for n in range(len(outerPoints)):
             node = nodes.findNodeByIdentifier(n + 1)
             fieldcache.setNode(node)
@@ -1662,13 +1664,20 @@ class MeshType_1d_vagus_path1(Scaffold_base):
 
         for group_n in range(len(nodesByGroup)):
             branch_name = nodesByGroup[group_n][0]
-
             branch_field_group = findOrCreateFieldGroup(fieldmodule, branch_name)
             branch_nodeset = branch_field_group.createNodesetGroup(nodes)
+
+            branch_term = get_vagus_branch_term(branch_name)[-1]
+            print(branch_name, ':', branch_term)
+            if branch_term != 'None':
+                branch_term_field_group = findOrCreateFieldGroup(fieldmodule, branch_term)
+                branch_term_nodeset = branch_term_field_group.createNodesetGroup(nodes)
 
             for n in range(len(nodesByGroup[group_n][1])):
                 node = nodes.findNodeByIdentifier(nodesByGroup[group_n][1][n])
                 branch_nodeset.addNode(node)
+                if branch_term != 'None':
+                    branch_term_nodeset.addNode(node)
 
         # create markers
         if 'Left vagus nerve' in parameterSetName:
