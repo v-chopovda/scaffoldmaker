@@ -1,8 +1,6 @@
-import os
 import re
-import csv
+import logging
 import tempfile
-import pandas as pd
 
 from cmlibs.utils.zinc.field import get_group_list
 from cmlibs.utils.zinc.group import groups_have_same_local_contents
@@ -11,6 +9,10 @@ from cmlibs.zinc.node import Node
 
 from scaffoldmaker.annotation.vagus_terms import marker_name_in_terms
 from scaffoldmaker.utils.zinc_utils import get_nodeset_field_parameters
+
+
+logger = logging.getLogger(__name__)
+
 
 class VagusInputData:
     """
@@ -35,6 +37,7 @@ class VagusInputData:
         self._datafile_path = None
         self._level_markers = {}
         self._orientation_data = {}
+        self._side_label = ""
         self._trunk_group_name = None
         self._trunk_coordinates = []
         self._trunk_radius = []
@@ -44,7 +47,6 @@ class VagusInputData:
 
         nodes = fm.findNodesetByFieldDomainType(Field.DOMAIN_TYPE_NODES)
         coordinates = fm.findFieldByName("coordinates").castFiniteElement()
-        assert coordinates.isValid() and (coordinates.getNumberOfComponents() == 3)
         radius = fm.findFieldByName("radius").castFiniteElement()
         datapoints = fm.findNodesetByFieldDomainType(Field.DOMAIN_TYPE_DATAPOINTS)
         marker_names = fm.findFieldByName("marker_name")
@@ -85,6 +87,12 @@ class VagusInputData:
                     annotation_name = 'orientation anterior'
                 orientation_group_names.append(annotation_name)
 
+        if self._trunk_group_name:
+            if 'left' in self._trunk_group_name:
+                self._side_label = 'left'
+            elif 'right' in self._trunk_group_name:
+                self._side_label = 'right'
+
         # extract marker data - name, coordinates (no marker terms are available)
         # sort markers here?
         marker_group = fm.findFieldByName("marker").castGroup()
@@ -110,12 +118,13 @@ class VagusInputData:
             self._orientation_data[orientation_group_name] = orientation_points[:]
 
         # extract trunk data - coordinates, nodes, radius - assume only one trunk group is used
-        group = fm.findFieldByName(self._trunk_group_name).castGroup()
-        nodeset = group.getNodesetGroup(nodes)
-        _, values = get_nodeset_field_parameters(nodeset, coordinates, [Node.VALUE_LABEL_VALUE])
-        trunk_nodes = [value[0] for value in values]
-        trunk_coordinates = [value[1][0] for value in values]
-        self._trunk_coordinates = trunk_coordinates[:]
+        if self._trunk_group_name:
+            group = fm.findFieldByName(self._trunk_group_name).castGroup()
+            nodeset = group.getNodesetGroup(nodes)
+            _, values = get_nodeset_field_parameters(nodeset, coordinates, [Node.VALUE_LABEL_VALUE])
+            trunk_nodes = [value[0] for value in values]
+            trunk_coordinates = [value[1][0] for value in values]
+            self._trunk_coordinates = trunk_coordinates[:]
 
         # not used at the moment
         if radius.isValid():
@@ -233,6 +242,12 @@ class VagusInputData:
         """
         return self._branch_parent_map
 
+    def get_side_label(self):
+        """
+        Get label indicating side of the vagus (left or right or '')
+        """
+        return self._side_label
+
     def get_datafile_path(self):
         """
         Get the path to the temporary file with the data.
@@ -268,20 +283,22 @@ def group_common_branches(branch_names):
     branch_common_map = {}
     for name, groups in grouped_names.items():
         if 'branch' in name and len(groups) > 1:
-            branch_name = 'all ' + name.replace('branch', 'branches', 1)
+            branch_name = name.replace('branch', 'branches', 1)
             branch_common_map[branch_name] = groups
 
     return branch_common_map
 
 
-
-
 def load_vagus_data(region):
     """
     :param region: Zinc region for model definition.
-    return: Provided the input file is supplied, it returns a data region with input data.
+    return: Provided the input file is supplied, it returns a data region with input data, otherwise None.
     """
     data_region = region.getParent().findChildByName('data')
-    assert data_region.isValid(), "Invalid input data file"
+    if not data_region.isValid():
+        logger.warning("Missing input data.")
+        return None
+
     vagus_data = VagusInputData(data_region)
     return vagus_data
+

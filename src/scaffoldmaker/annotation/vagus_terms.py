@@ -59,6 +59,8 @@ vagus_marker_terms = [
 vagus_branch_terms = [
     # branch names, based on lit.review
     # branch names with no indication of the side
+    ("cervical trunk", "ILX:0789914"),
+    ("thoracic trunk", "ILX:0784729"),
     ("meningeal branch of vagus nerve", "FMA:6231"),
     ("communicating branch of vagus nerve with glossopharyngeal nerve", "FMA:6233"),
     ("auricular branch of vagus nerve", "FMA:6232"),
@@ -82,10 +84,13 @@ vagus_branch_terms = [
     ("communicating branch of recurrent laryngeal nerve with internal laryngeal nerve", "FMA:53526"),
     ("inferior cervical cardiac branch of vagus nerve", "FMA:75530"),
     ("thoracic cardiac branch of vagus nerve", "FMA:53601"),
+    ("esophageal trunk", "ILX:0794853"),
 
     # right vagus branches
     ("right vagus nerve", "FMA:6219", "ILX:0789705"),
     ("right vagus X nerve trunk", "UBERON:0035021", "ILX:0730515"),
+    ("right cervical trunk", "ILX:0794141"),
+    ("right thoracic trunk", "ILX:0786664"),
     ("right meningeal branch of right vagus nerve", "FMA:53541", "ILX:0785804"),
     ("right branch between vagus nerve and glossopharyngeal nerve", "FMA:53559", "ILX:0790506"),
     ("right auricular branch of right vagus nerve", "FMA:53534", "ILX:0785879"),
@@ -147,6 +152,8 @@ vagus_branch_terms = [
     # left vagus branches
     ("left vagus nerve", "FMA:6220", "ILX:0785628"),
     ("left vagus X nerve trunk", "UBERON:0035020"),
+    ("left cervical trunk", "ILX:0794142"),
+    ("left thoracic trunk", "ILX:0787543"),
     ("left meningeal branch of left vagus nerve", "FMA:53542", "ILX:0736691"),
     ("left branch between vagus nerve and glossopharyngeal nerve", "FMA:53560", "ILX:0790685"),
     ("left auricular branch of left vagus nerve", "FMA:53535", "ILX:0789344"),
